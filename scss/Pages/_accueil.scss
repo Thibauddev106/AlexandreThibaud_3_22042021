@@ -1,0 +1,90 @@
+/* Présentations */
+
+.presentation
+{
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.presentation p
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.presentation button
+{
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: $primaire;
+    text-decoration-color: white;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+
+/* Fonctionnement */
+
+#fonctionnement
+{
+    margin-top: 30px;
+    text-align: center;
+    
+}
+.fonctionnement
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.fonctionnement ol
+{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    
+    
+    
+}
+
+.fonctionnement li
+{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    
+}
+
+
+/* Restaurant */
+
+article
+{
+    margin-top: 30px;
+    background-color: #f2f2f2;
+}
+a img
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.restaurants
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.restaurant
+{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
