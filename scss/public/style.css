@@ -1,34 +1,4 @@
 @charset "UTF-8";
-/*Base*/
-* {
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bolder; }
-
-.container {
-  max-width: 1200px;
-  margin: auto; }
-
-h1 {
-  font-size: 32px; }
-
-ul {
-  list-style-type: none; }
-
-a {
-  text-decoration: none;
-  color: inherit; }
-
-header {
-  font-family: 'Shrikhand', cursive; }
-
-.logo {
-  text-align: center;
-  margin-top: 40px; }
-
 /* Footer */
 footer {
   background-color: grey;
@@ -49,6 +19,13 @@ footer ul {
   justify-content: space-around;
   color: white; }
 
+header {
+  font-family: 'Shrikhand', cursive; }
+
+.logo {
+  text-align: center;
+  margin-top: 40px; }
+
 /* Présentations */
 .localisation {
   background-color: gray;
@@ -66,11 +43,7 @@ footer ul {
 
 .presentation p {
   margin-top: 20px;
-  margin-bottom: 20px;
-  margin: 20px; }
-
-.presentation h1 {
-  margin: 20px; }
+  margin-bottom: 20px; }
 
 .presentation button {
   margin-bottom: 40px;
@@ -83,25 +56,14 @@ footer ul {
   font-size: 15px; }
 
 /* Fonctionnement */
-@media screen and (max-width: 750px) {
-  .fonctionnement {
-    flex-direction: column; }
+#fonctionnement {
+  text-align: center; }
 
-  .fonctionnement-titre {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-
-  .etapes {
-    margin-bottom: 30px; } }
 .fonctionnement {
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
   margin-bottom: 40px; }
-
-.fonctionnement-titre h1 {
-  text-align: left; }
 
 .fa-mobile-alt {
   margin-left: 40px;
@@ -152,6 +114,10 @@ footer ul {
   background-color: #9356DC; }
 
 /* Restaurant */
+article {
+  margin-top: 30px;
+  background-color: #f2f2f2; }
+
 a img {
   width: 100%;
   height: 200px;
@@ -163,17 +129,14 @@ a img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 10px; }
+  padding-top: 20px; }
 
 article {
-  margin-top: 30px;
-  background-color: #f2f2f2;
   padding-bottom: 40px;
-  padding-top: 10px; }
+  padding-top: 20px; }
 
 article h1 {
-  margin-top: 20px;
-  margin-left: 20px; }
+  text-align: center; }
 
 .restaurant {
   display: flex;
@@ -185,24 +148,31 @@ article h1 {
   justify-content: space-between; }
 
 .restaurant h2 {
-  font-size: 20px;
-  padding-left: 15px; }
+  font-size: 20px; }
 
 .restaurant p {
-  padding-left: 15px;
   font-weight: bold; }
 
-@media screen and (max-width: 750px) {
-  .restaurants {
-    flex-direction: column;
-    align-items: center; }
+/*Base*/
+* {
+  margin: 0;
+  padding: 0; }
 
-  .restaurant {
-    margin-top: 20px;
-    width: 90%; }
+body {
+  font-family: 'Roboto', sans-serif; }
 
-  article h1 {
-    margin-top: 20px;
-    margin-left: 5%; } }
+.container {
+  max-width: 1200px;
+  margin: auto; }
+
+h1 {
+  font-size: 32px; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
 
 /*# sourceMappingURL=.style.css.map */
