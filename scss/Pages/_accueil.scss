@@ -114,13 +114,12 @@
 
 .etapes
 {
-    background-color: red;
+    
     font-weight: 500;
     position: relative;
     display: flex;
     width: 330px;
     height: 75px;
-    justify-content: center;
     border-radius: 20px;
     background: $grisFond;
     align-items: center;
@@ -185,7 +184,7 @@ article
     padding-bottom: 70px;
     padding-top: 10px;
     
-    h1
+    h2
     {
         margin-top: 20px;
         margin-left: 20px;
@@ -277,7 +276,7 @@ article
         width: 90%;
     }
 
-    article h1
+    article h2
     {
         margin-top: 20px;
         margin-left: 5%;

@@ -131,13 +131,11 @@ footer {
   color: gray; }
 
 .etapes {
-  background-color: red;
   font-weight: 500;
   position: relative;
   display: flex;
   width: 330px;
   height: 75px;
-  justify-content: center;
   border-radius: 20px;
   background: #F6F6F6;
   align-items: center;
@@ -184,7 +182,7 @@ article {
   background-color: #F6F6F6;
   padding-bottom: 70px;
   padding-top: 10px; }
-  article h1 {
+  article h2 {
     margin-top: 20px;
     margin-left: 20px;
     font-size: 25px; }
@@ -246,8 +244,8 @@ article {
     margin-top: 20px;
     width: 90%; }
 
-  article h1 {
+  article h2 {
     margin-top: 20px;
     margin-left: 5%; } }
 
-/*# sourceMappingURL=.style.css.map */
+/*# sourceMappingURL=style.css.map */
