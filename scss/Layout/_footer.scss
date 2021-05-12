@@ -1,31 +1,51 @@
 /* Footer */
 
+@media screen and (max-width: 750px)
+{
+    footer 
+    {
+        ul 
+        {
+            flex-direction: column;
+        }
+    }
+}
+
 footer
 {
-    background-color: grey;
-    padding: 40px 40px;
-    font-size: 20px;
-    font-weight: 300;
+    background-color: $grisFooter;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    
+    h2
+    {
+        font-size: 20px;
+        color: white;
+        font-family:'Shrikhand',sans-serif;
+        margin-bottom: 16px;
+        font-weight: lighter;
+    }
+    ul
+    {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    li
+    {
+        margin-bottom: 8px;
+    }
+
+    i
+    {
+        margin-right: 10px;
+    }
 }
 
-.logo-footer
-{
-    text-align: left;
-    
-    
-}
-.footer img
-{
-    width: auto;
-    height: 20px;
-    text-decoration: white;
 
-}
 
-footer ul
-{
-    display: flex;
-    justify-content: space-around;
-    color: white;
-    
-}
+
