@@ -5,8 +5,7 @@
   padding: 0; }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bolder; }
+  font-family: 'Roboto', sans-serif; }
 
 .container {
   max-width: 1200px;
@@ -60,7 +59,8 @@ footer {
 .localisation {
   background-color: #EAEAEA;
   padding: 17px;
-  font-weight: bold; }
+  font-weight: normal;
+  color: #353535; }
 
 .fa-map-marker-alt {
   margin-right: 10px; }
@@ -70,11 +70,12 @@ footer {
   text-align: center;
   margin-bottom: 30px; }
   .presentation p {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin: 20px; }
   .presentation h1 {
-    margin: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
     font-size: 25px;
     font-weight: bolder; }
   .presentation button {
@@ -92,27 +93,19 @@ footer {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3); }
 
 /* Fonctionnement */
-@media screen and (max-width: 750px) {
-  .fonctionnement {
-    flex-direction: column; }
-
-  .fonctionnement-titre {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px; }
-
-  .etapes {
-    margin-left: 20px;
-    margin-bottom: 30px; } }
 .fonctionnement {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 40px; }
 
-.fonctionnement-titre h1 {
-  text-align: left;
-  font-size: 25px; }
+.fonctionnement-titre h2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 900; }
 
 .fa-mobile-alt {
   margin-left: 40px;
@@ -131,13 +124,28 @@ footer {
   color: gray; }
 
 .etapes {
-  font-weight: 500;
+  margin-left: 15px;
+  margin-bottom: 30px;
+  font-weight: 900;
   position: relative;
   display: flex;
-  width: 330px;
+  width: 310px;
   height: 75px;
   border-radius: 20px;
   background: #F6F6F6;
+  align-items: center;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15); }
+
+.etapes-rose {
+  margin-left: 15px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  position: relative;
+  display: flex;
+  width: 310px;
+  height: 75px;
+  border-radius: 20px;
+  background: #f2eafb;
   align-items: center;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15); }
 
@@ -154,7 +162,8 @@ footer {
   justify-content: center;
   width: 30px;
   height: 30px;
-  color: white; }
+  color: white;
+  font-size: 14px; }
 
 .cercle {
   position: absolute;
@@ -173,9 +182,10 @@ a img {
 
 .restaurants {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 10px; }
+  padding-top: 10px;
+  flex-direction: column;
+  align-items: center; }
 
 article {
   margin-top: 30px;
@@ -188,9 +198,10 @@ article {
     font-size: 25px; }
 
 .restaurant {
+  margin-top: 20px;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  width: 20%;
   background-color: white;
   border-radius: 20px;
   padding-bottom: 20px;
@@ -198,12 +209,14 @@ article {
   position: relative;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15); }
   .restaurant h2 {
+    margin-top: 10px;
+    margin-left: 15px;
     font-size: 20px;
-    padding-left: 15px;
-    font-weight: bolder; }
+    margin-bottom: 5px;
+    font-weight: 900; }
   .restaurant p {
     padding-left: 15px;
-    font-weight: bold; }
+    font-weight: normal; }
 
 .description {
   position: relative; }
@@ -234,18 +247,5 @@ article {
   width: 80px;
   height: 30px;
   color: #278870; }
-
-@media screen and (max-width: 750px) {
-  .restaurants {
-    flex-direction: column;
-    align-items: center; }
-
-  .restaurant {
-    margin-top: 20px;
-    width: 90%; }
-
-  article h2 {
-    margin-top: 20px;
-    margin-left: 5%; } }
 
 /*# sourceMappingURL=style.css.map */
