@@ -74,6 +74,7 @@ footer {
     margin-bottom: 20px;
     margin: 20px; }
   .presentation h1 {
+    background-color: blue;
     margin: 20px;
     font-size: 25px;
     font-weight: bolder; }
