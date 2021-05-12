@@ -1,9 +1,10 @@
 {
   "name": "p3",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss/main.scss:./scss/public/css/style.css"
+    "sass":"sass --watch ./scss/main.scss:./public/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,5 @@
   "bugs": {
     "url": "https://github.com/Thibauddev106/AlexandreThibaud_3_22042021/issues"
   },
-  "homepage": "https://github.com/Thibauddev106/AlexandreThibaud_3_22042021#readme",
-  "description": ""
+  "homepage": "https://github.com/Thibauddev106/AlexandreThibaud_3_22042021#readme"
 }
