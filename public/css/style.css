@@ -252,6 +252,21 @@ header {
   position: relative;
   display: flex;
   justify-content: center; }
+  header .precedent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    height: 100%; }
+    header .precedent .retour {
+      position: absolute;
+      left: 0;
+      align-items: center;
+      justify-content: center;
+      top: 10px;
+      font-size: 20px;
+      padding-left: 20px;
+      padding-top: 12px; }
 
 .imageMenu {
   max-height: 200px; }
@@ -263,7 +278,7 @@ header {
   display: flex;
   flex-direction: column;
   border-radius: 42px 42px 0 0;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   padding: 35px 20px; }
   .menus .hautMenu {
     justify-content: space-between;
@@ -271,51 +286,70 @@ header {
     display: flex;
     flex-direction: row;
     margin-bottom: 30px; }
-  .menus h2 {
-    font-size: 28px;
-    font-family: "Shrikhand", sans-serif;
-    font-weight: lighter;
-    margin: 0;
-    text-align: left; }
-  .menus .favoris {
-    margin-top: 0;
-    padding-top: 0;
+    .menus .hautMenu h2 {
+      font-size: 28px;
+      font-family: "Shrikhand", sans-serif;
+      font-weight: lighter;
+      margin: 0;
+      text-align: left; }
+    .menus .hautMenu .favoris {
+      margin-top: 0;
+      padding-top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .menus .hautMenu .favoris .coeur {
+        position: absolute; }
+  .menus .choixPlat {
+    margin-bottom: 30px; }
+    .menus .choixPlat .titre {
+      margin-left: 10px;
+      margin-bottom: 5px;
+      margin-top: 0;
+      font-weight: 300; }
+    .menus .choixPlat .ligne {
+      margin: 5px 0 12px 10px;
+      width: 40px;
+      height: 3px;
+      background-color: #99E2D0; }
+    .menus .choixPlat .plat {
+      min-width: 300px;
+      padding-right: 25px;
+      position: relative;
+      padding: 12px;
+      border-radius: 15px;
+      background-color: white;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+      margin-bottom: 10px; }
+      .menus .choixPlat .plat .platNom {
+        font-weight: 700; }
+      .menus .choixPlat .plat .platLigne2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        .menus .choixPlat .plat .platLigne2 .platDesc {
+          font-weight: 300; }
+        .menus .choixPlat .plat .platLigne2 .platPrix {
+          font-weight: bold; }
+
+.containerButton {
+  display: flex;
+  justify-content: center;
+  background-color: #F6F6F6;
+  padding-bottom: 40px; }
+  .containerButton .Button {
     display: flex;
     align-items: center;
-    justify-content: center; }
-    .menus .favoris .coeur {
-      position: absolute; }
-
-.titre {
-  margin-left: 10px;
-  margin-bottom: 5px;
-  margin-top: 0;
-  font-weight: 200; }
-
-.ligne {
-  margin: 5px 0 12px 10px;
-  width: 40px;
-  height: 3px;
-  background-color: #99E2D0; }
-
-.plat {
-  min-width: 300px;
-  padding-right: 25px;
-  position: relative;
-  padding: 12px;
-  border-radius: 15px;
-  background-color: #ffffff;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
-  margin-bottom: 10px; }
-  .plat .platNom {
-    font-weight: 500; }
-  .plat .platLigne2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-  .plat .platDesc {
-    font-weight: 300; }
-  .plat .platPrix {
-    font-weight: bold; }
+    justify-content: center;
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+    background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    border: none;
+    font-size: 16px;
+    font-weight: 400; }
 
 /*# sourceMappingURL=style.css.map */
