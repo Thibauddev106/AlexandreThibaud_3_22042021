@@ -273,28 +273,29 @@ article
         justify-content:space-around;
         flex-wrap: wrap;
     }
-
-    article h2
+    
+    article 
     {
-        display: flex;
-        justify-content: center;
-    }
-
-    .restaurants
-    {
-        
-        background-color: red;
-        flex-flow: row wrap;
-        justify-content:flex-start;
-        
-        .restaurant
+        h2
         {
-            width: 10%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        
+        .restaurants
+        {
+            display: flex;
+            flex-direction: row;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            
+            .restaurant
+            {
+                width: 40%;
+            }
         }
     }
-   
 }
-
-
 
 

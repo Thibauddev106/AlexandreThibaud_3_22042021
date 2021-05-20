@@ -246,13 +246,13 @@ article {
   article h2 {
     display: flex;
     justify-content: center; }
-
-  .restaurants {
-    background-color: red;
+  article .restaurants {
+    display: flex;
+    flex-direction: row;
     flex-flow: row wrap;
-    justify-content: flex-start; }
-    .restaurants .restaurant {
-      width: 10%; } }
+    justify-content: space-evenly; }
+    article .restaurants .restaurant {
+      width: 40%; } }
 header {
   position: relative;
   display: flex;
