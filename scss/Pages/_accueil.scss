@@ -1,25 +1,23 @@
 /* Présentations */
 
-.localisation
-{
-    background-color: $grisLocal;
-    padding: 17px;
-    font-weight: normal;
-    color:$grisFooter; 
-    
-}
-
-.fa-map-marker-alt
-{
-    margin-right: 10px;
-}
-
 .presentation
 {
     background-color: $grisFond;
     text-align: center;
-    
     margin-bottom: 30px;
+    
+    .localisation
+    {
+        background-color: $grisLocal;
+        padding: 17px;
+        font-weight: normal;
+        color:$grisFooter;  
+    
+        .fa-map-marker-alt
+        {
+            margin-right: 10px;
+        }
+    }
 
     p 
     {
@@ -54,20 +52,7 @@
 }
 
 
-
 /* Fonctionnement */
-
-
-.fonctionnement
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    
-    
-}
 
 .fonctionnement-titre h2
 {
@@ -76,110 +61,100 @@
     margin-left: 20px;
     font-size: 25px;
     font-weight: 900;
-    
 }
-
-.fa-mobile-alt
-{
-    margin-left: 40px;
-    margin-right: 20px;
-    color: gray;
-    text-align: center;
-}
-
-.fa-list-ul
-{
-    margin-left: 40px;
-    margin-right: 20px;
-    color: gray;
-}
-
-.fa-store
-{
-    margin-left: 40px;
-    margin-right: 20px;
-    color: gray;
-}
-
-.etapes
-{
-    margin-left: 15px;
-    margin-bottom: 30px;
-    font-weight: 900;
-    position: relative;
-    display: flex;
-    width: 310px;
-    height: 75px;
-    border-radius: 20px;
-    background: $grisFond;
-    align-items: center;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
-}
-.etapes-rose
-{
-    margin-left: 15px;
-    margin-bottom: 30px;
-    font-weight: 900;
-    position: relative;
-    display: flex;
-    width: 310px;
-    height: 75px;
-    border-radius: 20px;
-    background: $rose;
-    align-items: center;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15); 
-}
-
-.cercle-num
-{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    margin-left: -15px;
-}
-
-.num
-{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    color: white;
-    font-size: 14px;
-}
-
-.cercle
-{
-    position:absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: $primaire;
-    
-}
-
-
-/* Restaurant */
-
-a img
-{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.restaurants
+   
+.fonctionnement
 {
     display: flex;
-    justify-content: space-around;
-    padding-top: 10px;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+    .etapes 
+    {
+        margin-left: 15px;
+        margin-bottom: 30px;
+        font-weight: 900;
+        position: relative;
+        display: flex;
+        width: 310px;
+        height: 75px;
+        border-radius: 20px;
+        background: $grisFond;
+        align-items: center;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+        
+            .fa-mobile-alt
+            {
+                margin-left: 40px;
+                margin-right: 20px;
+                color: gray;
+                text-align: center;
+            }
+
+            .fa-list-ul
+            {
+                margin-left: 40px;
+                margin-right: 20px;
+                color: gray;
+            }
+            
+            .fa-store
+            {
+                margin-left: 40px;
+                margin-right: 20px;
+                color: gray;
+            }
+
+            .cercle-num
+            {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                margin-left: -15px;
+            }
+
+            .num
+            {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30px;
+                height: 30px;
+                color: white;
+                font-size: 14px;
+            }
+
+            .cercle
+            {
+                position:absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: $primaire;
+            }
+            
+    }
+
+    /*.etapes-rose
+    {
+        margin-left: 15px;
+        margin-bottom: 30px;
+        font-weight: 900;
+        position: relative;
+        display: flex;
+        width: 310px;
+        height: 75px;
+        border-radius: 20px;
+        background: $rose;
+        align-items: center;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15); 
+    }*/
 }
+
+/* Restaurant */
 
 article
 {
@@ -194,76 +169,132 @@ article
         margin-left: 20px;
         font-size: 25px;
     }
-}
 
-
-.restaurant
-{
-    margin-top: 20px;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 20px;
-    padding-bottom: 20px;
-    justify-content: space-between;
-    position: relative;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
-    
-    
-    h2 
+    .restaurants
     {
-        margin-top: 10px;
-        margin-left: 15px;
-        font-size: 20px;
-        margin-bottom: 5px;
-        font-weight: 900;
-    }
-
-    p
-    {
-        padding-left: 15px;
-        font-weight: normal;
-    }
-    
-}
-
-.description
-    {
-        position: relative;
-    }
-.favoris
-    {
-        position: absolute;
-        top: 0;
-        right: 0;
         display: flex;
+        padding-top: 10px;
+        flex-direction: column;
         align-items: center;
+
+        .restaurant
+        {
+            margin-top: 20px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 20px;
+            padding-bottom: 20px;
+            justify-content: space-between;
+            position: relative;
+            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+            
+            a img
+            {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+            
+            .description
+            {
+                position: relative;
+            
+                h3 
+                {
+                    margin-top: 10px;
+                    margin-left: 15px;
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                    font-weight: 900;
+                }
+
+                p
+                {
+                    padding-left: 15px;
+                    font-weight: normal;
+                }
+
+                .favoris
+                {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 20%;
+                    height: 100%;
+
+                    .coeur 
+                    {
+                    font-size: 25px; 
+                    }    
+                }
+            }
+
+            .nouveau
+            {
+              position: absolute;
+              font-weight:bolder;
+              font-size: 15px;
+              background-color:$vert;
+              top: 15px;
+              right: 15px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 80px;
+              height: 30px;
+              color: $vertFonce;
+            }   
+        }
+    }
+}
+
+
+/* MediaQuery */
+
+@media screen and (min-width: 700px)
+{
+
+    .fonctionnement-titre h2
+    {
+        flex-direction: row;
         justify-content: center;
-        width: 20%;
-        height: 100%;
     }
-.coeur 
+
+    .fonctionnement
     {
-       font-size: 25px; 
-
-    }    
-
-.nouveau
-    {
-      position: absolute;
-      font-weight:bolder;
-      font-size: 15px;
-      background-color:$vert;
-      top: 15px;
-      right: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 80px;
-      height: 30px;
-      color: $vertFonce;
-
-
+        flex-direction: row;
+        justify-content:space-around;
+        flex-wrap: wrap;
     }
+
+    article h2
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .restaurants
+    {
+        
+        background-color: red;
+        flex-flow: row wrap;
+        justify-content:flex-start;
+        
+        .restaurant
+        {
+            width: 10%;
+        }
+    }
+   
+}
+
+
+
 
