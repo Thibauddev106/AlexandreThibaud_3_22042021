@@ -158,3 +158,26 @@ header
 
     }
 }
+
+
+/*Media Query*/
+
+@media screen and (min-width: 700px) 
+{
+    .plats
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        
+    }
+    .plat
+        {
+            display: flex;
+            flex-direction: column;
+            
+            width: 10px;
+            
+        }
+}

@@ -357,4 +357,16 @@ header {
     font-size: 16px;
     font-weight: 400; }
 
+/*Media Query*/
+@media screen and (min-width: 700px) {
+  .plats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+
+  .plat {
+    display: flex;
+    flex-direction: column;
+    width: 10px; } }
+
 /*# sourceMappingURL=style.css.map */
