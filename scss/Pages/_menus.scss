@@ -64,16 +64,38 @@ header
 
         .favoris
         {
+            margin-right: 20px;
             margin-top: 0;
             padding-top: 0;
             display: flex;
             align-items: center;
             justify-content: center;
             
-            .coeur
+            .coeur1
             {
-                position: absolute; 
+                font-size: 25px;
+                position: absolute;
+                z-index: 2;
+                opacity: 0;
+                
+                &:hover
+                {
+                    opacity: 1;
+                    color: red;
+                }    
             }
+            .coeur2
+            {
+                font-size: 25px;
+                position: absolute;
+                z-index: 1;
+                opacity: 1;
+                
+                &:hover
+                {
+                    opacity: 0;
+                }
+            }   
         }
     }
 
@@ -96,38 +118,101 @@ header
             height: 3px;
             background-color: $tertiaire;
         }
-        .plat
+
+        .plats
         {
-            min-width: 300px;
-            padding-right: 25px;
-            position: relative;
-            padding: 12px;
-            border-radius: 15px;
-            background-color: white;
-            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
-            margin-bottom: 10px;
-            
-            .platNom
+            .plat
             {
-                font-weight: 700;
+                
+                min-width: 300px;
+                padding-right: 25px;
+                position: relative;
+                padding: 12px;
+                border-radius: 15px;
+                background-color: white;
+                box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+                margin-bottom: 10px;
+                overflow: hidden;
+                
+                &:hover
+                {
+                    .platValide
+                    {
+                        transform: translateX(0px);
+                    }
+
+                    .platValideIcon
+                    {
+                        transform: rotate(0deg);
+                    }
+
+                    .platDesc
+                    {
+                        overflow: hidden;
+                    }
+
+                    .platPrix
+                    {
+                        margin-right: 60px;
+                    }
+                }
+                
+                
+                .platNom
+                {
+                    font-weight: 700;
+                }
+
+                .platLigne2
+                {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                
+                    .platDesc
+                    {
+                        font-weight: 300;
+                    }
+
+                    .platPrix
+                    {
+                        font-weight: bold;
+                    }
+                }
+
+                .platValide
+                {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    transition-duration: 400ms;
+                    transform: translateX(60px);
+
+                    .platValideV
+                    {
+                        width: 60px;
+                        height: 100%;
+                        background-color: $tertiaire;
+                    }
+
+                    .platValideIcon
+                    {
+                        font-size: 25px;
+                        position: absolute;
+                        top: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        color: white;
+                        transition-duration: 400ms;
+                        transform: rotate(360deg);
+                    }
+                }
             }
-
-            .platLigne2
-            {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            
-                .platDesc
-                {
-                    font-weight: 300;
-                }
-
-                .platPrix
-                {
-                    font-weight: bold;
-                }
-        }   }   
+        }   
     }
 }
 
@@ -160,6 +245,7 @@ header
 }
 
 
+
 /*Media Query*/
 
 @media screen and (min-width: 700px) 
@@ -168,16 +254,9 @@ header
     {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
 
         
     }
-    .plat
-        {
-            display: flex;
-            flex-direction: column;
-            
-            width: 10px;
-            
-        }
 }

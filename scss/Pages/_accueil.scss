@@ -85,6 +85,10 @@
         align-items: center;
         box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
         
+        &:hover
+        {
+            background-color: $rose;
+        }
             .fa-mobile-alt
             {
                 margin-left: 40px;
@@ -229,9 +233,30 @@ article
                     width: 20%;
                     height: 100%;
 
-                    .coeur 
+                    .coeur1
                     {
-                    font-size: 25px; 
+                        font-size: 25px;
+                        position: absolute;
+                        z-index: 2;
+                        opacity: 0;
+                        
+                        &:hover
+                        {
+                            opacity: 1;
+                            color: red;
+                        }    
+                    }
+                    .coeur2
+                    {
+                        font-size: 25px;
+                        position: absolute;
+                        z-index: 1;
+                        opacity: 1;
+                        
+                        &:hover
+                        {
+                            opacity: 0;
+                        }
                     }    
                 }
             }
