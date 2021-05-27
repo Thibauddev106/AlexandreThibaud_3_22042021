@@ -8,7 +8,7 @@ body {
   font-family: 'Roboto', sans-serif; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto; }
 
 h1 {
@@ -56,6 +56,41 @@ footer {
     margin-right: 10px; }
 
 /* Présentations */
+.contenuLoader {
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  animation: loaderPage 3s ease-in-out normal forwards;
+  background: #99E2D0;
+  opacity: 1;
+  position: fixed; }
+  .contenuLoader .logo-loader {
+    width: auto;
+    height: 40px;
+    margin-bottom: 100px;
+    position: fixed; }
+  .contenuLoader .loader {
+    transition-duration: 2s;
+    transform: rotate(360deg);
+    color: #FF79DA;
+    font-size: 30px; }
+@keyframes loaderPage {
+  0% {
+    opacity: 1; }
+  75% {
+    opacity: 1; }
+  99% {
+    opacity: 0; }
+  100% {
+    visibility: hidden;
+    opacity: 0; } }
 .presentation {
   background-color: #F6F6F6;
   text-align: center;
@@ -103,21 +138,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 40px;
-  /*.etapes-rose
-  {
-      margin-left: 15px;
-      margin-bottom: 30px;
-      font-weight: 900;
-      position: relative;
-      display: flex;
-      width: 310px;
-      height: 75px;
-      border-radius: 20px;
-      background: $rose;
-      align-items: center;
-      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15); 
-  }*/ }
+  margin-bottom: 40px; }
   .fonctionnement .etapes {
     margin-left: 15px;
     margin-bottom: 30px;
@@ -225,7 +246,11 @@ article {
             opacity: 0; }
             article .restaurants .restaurant .description .favoris .coeur1:hover {
               opacity: 1;
-              color: red; }
+              background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+              background-clip: border-box;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              border: none; }
           article .restaurants .restaurant .description .favoris .coeur2 {
             font-size: 25px;
             position: absolute;
@@ -326,12 +351,15 @@ header {
         opacity: 0; }
         .menus .hautMenu .favoris .coeur1:hover {
           opacity: 1;
-          color: red; }
+          background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+          background-clip: border-box;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          border: none; }
       .menus .hautMenu .favoris .coeur2 {
         font-size: 25px;
         position: absolute;
-        z-index: 1;
-        opacity: 1; }
+        z-index: 1; }
         .menus .hautMenu .favoris .coeur2:hover {
           opacity: 0; }
   .menus .choixPlat {
@@ -358,8 +386,8 @@ header {
       overflow: hidden; }
       .menus .choixPlat .plats .plat:hover .platValide {
         transform: translateX(0px); }
-      .menus .choixPlat .plats .plat:hover .platValideIcon {
-        transform: rotate(0deg); }
+        .menus .choixPlat .plats .plat:hover .platValide .platValideIcon {
+          transform: rotate(0deg); }
       .menus .choixPlat .plats .plat:hover .platDesc {
         overflow: hidden; }
       .menus .choixPlat .plats .plat:hover .platPrix {
@@ -371,7 +399,9 @@ header {
         flex-direction: row;
         justify-content: space-between; }
         .menus .choixPlat .plats .plat .platLigne2 .platDesc {
-          font-weight: 300; }
+          font-weight: 300;
+          white-space: nowrap;
+          text-overflow: ellipsis; }
         .menus .choixPlat .plats .plat .platLigne2 .platPrix {
           font-weight: bold; }
       .menus .choixPlat .plats .plat .platValide {
@@ -395,8 +425,8 @@ header {
           width: 100%;
           height: 100%;
           color: white;
-          transition-duration: 400ms;
-          transform: rotate(360deg); }
+          transform: rotate(360deg);
+          transition-duration: 400ms; }
 
 .containerButton {
   display: flex;
