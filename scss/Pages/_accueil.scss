@@ -91,6 +91,13 @@
         height: 50px;
         padding-top: 17px;
         box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+        transition: box-shadow 150ms linear, transform 150ms linear;
+
+            &:hover
+            {
+                transform: scale(0.97);
+                box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3);
+            }
     }
 }
 

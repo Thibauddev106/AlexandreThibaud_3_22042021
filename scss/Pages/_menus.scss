@@ -127,7 +127,7 @@ header
         {
             .plat
             {
-                
+                top: 45px;
                 min-width: 300px;
                 padding-right: 25px;
                 position: relative;
@@ -137,7 +137,9 @@ header
                 box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
                 margin-bottom: 10px;
                 overflow: hidden;
+                animation: moveCarte 1s cubic-bezier(0, 0, 0, 1) forwards;
                 
+
                 &:hover
                 {
                     .platValide
@@ -248,7 +250,13 @@ header
         border: none;
         font-size: 16px;
         font-weight: 400;
+        transition: box-shadow 150ms linear, transform 150ms linear;
 
+        &:hover
+        {
+            transform: scale(0.97);
+            box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3);
+        }
     }
 }
 
@@ -267,4 +275,13 @@ header
 
         
     }
+
+}
+
+/*keyframes*/
+
+@keyframes moveCarte
+{
+    0% {opacity: 0;}
+    100% {opacity: 1;transform: translateY(-45px)}
 }

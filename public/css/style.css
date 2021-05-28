@@ -123,7 +123,11 @@ footer {
     width: 220px;
     height: 50px;
     padding-top: 17px;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    transition: box-shadow 150ms linear, transform 150ms linear; }
+    .presentation button:hover {
+      transform: scale(0.97);
+      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3); }
 
 /* Fonctionnement */
 .fonctionnement-titre h2 {
@@ -375,6 +379,7 @@ header {
       height: 3px;
       background-color: #99E2D0; }
     .menus .choixPlat .plats .plat {
+      top: 45px;
       min-width: 300px;
       padding-right: 25px;
       position: relative;
@@ -383,7 +388,8 @@ header {
       background-color: white;
       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
       margin-bottom: 10px;
-      overflow: hidden; }
+      overflow: hidden;
+      animation: moveCarte 1s cubic-bezier(0, 0, 0, 1) forwards; }
       .menus .choixPlat .plats .plat:hover .platValide {
         transform: translateX(0px); }
         .menus .choixPlat .plats .plat:hover .platValide .platValideIcon {
@@ -446,7 +452,11 @@ header {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
     border: none;
     font-size: 16px;
-    font-weight: 400; }
+    font-weight: 400;
+    transition: box-shadow 150ms linear, transform 150ms linear; }
+    .containerButton .Button:hover {
+      transform: scale(0.97);
+      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3); }
 
 /*Media Query*/
 @media screen and (min-width: 700px) {
@@ -455,5 +465,12 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly; } }
+/*keyframes*/
+@keyframes moveCarte {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translateY(-45px); } }
 
 /*# sourceMappingURL=style.css.map */
