@@ -86,6 +86,9 @@ header
                     -webkit-background-clip: text;
                     -webkit-text-fill-color:transparent;
                     border:none;
+                    transition: transform 250ms;
+                    animation: progressive 250ms;
+                    animation-fill-mode: forwards;
                 }    
             }
 
@@ -94,6 +97,7 @@ header
                 font-size: 25px;
                 position: absolute;
                 z-index: 1;
+               
                 
                 &:hover
                 {
@@ -123,110 +127,104 @@ header
             background-color: $tertiaire;
         }
 
-        .plats
+        
+        .plat
         {
-            .plat
+            top: 45px;
+            min-width: 300px;
+            padding-right: 25px;
+            position: relative;
+            padding: 12px;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+            margin-bottom: 10px;
+            overflow: hidden;
+            animation: moveCarte 1s cubic-bezier(0, 0, 0, 1) forwards;
+            opacity: 0;
+            
+            &:hover
             {
-                top: 45px;
-                min-width: 300px;
-                padding-right: 25px;
-                position: relative;
-                padding: 12px;
-                border-radius: 15px;
-                background-color: white;
-                box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
-                margin-bottom: 10px;
-                overflow: hidden;
-                animation: moveCarte 1s cubic-bezier(0, 0, 0, 1) forwards;
-                
-
-                &:hover
-                {
-                    .platValide
-                    {
-                        transform: translateX(0px);
-                
-                        .platValideIcon
-                        {
-                            transform: rotate(0deg);   
-                        }
-                    }
-
-                    .platDesc
-                    {
-                        overflow: hidden;
-                    }
-
-                    .platPrix
-                    {
-                        margin-right: 60px;
-                    }
-                }
-                
-                
-                .platNom
-                {
-                    font-weight: 700;
-                }
-
-                .platLigne2
-                {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                
-                    .platDesc
-                    {
-                        font-weight: 300;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                    }
-
-                    .platPrix
-                    {
-                        font-weight: bold;
-                    }
-                }
-
                 .platValide
                 {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    height: 100%;
-                    transition-duration: 400ms;
-                    transform: translateX(60px);
-
-                    .platValideV
-                    {
-                        width: 60px;
-                        height: 100%;
-                        background-color: $tertiaire;
-                    }
-
+                    transform: translateX(0px);
+            
                     .platValideIcon
                     {
-                        font-size: 25px;
-                        position: absolute;
-                        top: 0;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 100%;
-                        height: 100%;
-                        color: white;
-                        transform: rotate(360deg);
-                        transition-duration: 400ms;
-                        
-                        
+                        transform: rotate(0deg);   
                     }
+                }
+
+                .platDesc
+                {
+                    overflow: hidden;
+                }
+
+                .platPrix
+                {
+                    margin-right: 60px;
+                }
+            }
+            
+            
+            .platNom
+            {
+                font-weight: 700;
+            }
+
+            .platLigne2
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            
+                .platDesc
+                {
+                    font-weight: 300;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+                .platPrix
+                {
+                    font-weight: bold;
+                }
+            }
+
+            .platValide
+            {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                transition-duration: 400ms;
+                transform: translateX(60px);
+
+                .platValideV
+                {
+                    width: 60px;
+                    height: 100%;
+                    background-color: $tertiaire;
+                }
+
+                .platValideIcon
+                {
+                    font-size: 25px;
+                    position: absolute;
+                    top: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    color: white;
+                    transform: rotate(360deg);
+                    transition-duration: 400ms;     
                 }
             }
         }   
     }
 }
-
-
 
 .containerButton
 {
@@ -261,7 +259,6 @@ header
 }
 
 
-
 /*Media Query*/
 
 @media screen and (min-width: 700px) 
@@ -272,11 +269,23 @@ header
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-
-        
+             
     }
 
+    .plat
+    {
+        margin-right: 20px;
+        overflow: visible;
+        max-width: 350px;
+        
+    }
+    .platPrix
+    {
+        margin-left: 10px;
+    }
+    
 }
+
 
 /*keyframes*/
 
@@ -284,4 +293,11 @@ header
 {
     0% {opacity: 0;}
     100% {opacity: 1;transform: translateY(-45px)}
+}
+
+@keyframes progressive
+{
+    0% {transform: scale(0);}
+    90% {transform: scale(1.3);}
+    100% {transform: scale(1);}
 }
