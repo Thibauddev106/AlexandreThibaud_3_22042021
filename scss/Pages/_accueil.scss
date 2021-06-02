@@ -30,16 +30,7 @@
         transition-duration: 2s;
         transform: rotate(360deg);
         color: $secondaire;
-        font-size: 30px;
-        
-    }
-
-    @keyframes loaderPage {
-        0% {opacity: 1;}
-        75% {opacity: 1;}
-        99% {opacity: 0;}
-        100% {visibility: hidden;
-            opacity: 0;}
+        font-size: 30px; 
     }
 }
 
@@ -271,7 +262,7 @@ article
 
                     .coeur1
                     {
-                        font-size: 25px;
+                        font-size: 27px;
                         position: absolute;
                         z-index: 2;
                         opacity: 0;
@@ -296,18 +287,6 @@ article
                         position: absolute;
                         z-index: 1;
                         opacity: 1;
-                        
-                        &:hover
-                        {
-                            opacity: 0;
-                            
-                        }
-                    @keyframes progressive
-                    {
-                        0% {transform: scale(0); }
-                        90% {transform: scale(1.3); }
-                        100% {transform: scale(1); }   
-                    }
                     }    
                 }
             }
