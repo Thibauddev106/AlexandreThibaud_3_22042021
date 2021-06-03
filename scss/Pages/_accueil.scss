@@ -21,12 +21,10 @@
         width: auto;
         height: 40px;
         margin-bottom: 100px;
-        position: fixed;
-        
+        position: fixed; 
     }
     .loader
     {
-        
         transition-duration: 2s;
         transform: rotate(360deg);
         color: $secondaire;
@@ -277,8 +275,7 @@ article
                             border:none;
                             transition: transform 250ms;
                             animation: progressive 250ms;
-                            animation-fill-mode: forwards;
-                            
+                            animation-fill-mode: forwards;     
                         }    
                     }
                     .coeur2
