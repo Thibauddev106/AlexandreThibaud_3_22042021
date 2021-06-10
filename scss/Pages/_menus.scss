@@ -126,16 +126,21 @@ header
         .platEntrees
         {
             animation: moveCarte 1s cubic-bezier(0, 0, 0, 1) forwards;   
+            
         }
 
         .platPlats
         {
-            animation: moveCarte 2s cubic-bezier(0, 0, 0, 1) forwards;
+            
+            animation: moveCarte 1s cubic-bezier(0, 0, 0, 1) forwards;
+            animation-delay: 400ms;
         }
         
         .platDesserts
         {
-            animation: moveCarte 3s cubic-bezier(0, 0, 0, 1) forwards;
+            
+            animation: moveCarte 1s cubic-bezier(0, 0, 0, 1) forwards;
+            animation-delay: 900ms;
         }
 
         .plat

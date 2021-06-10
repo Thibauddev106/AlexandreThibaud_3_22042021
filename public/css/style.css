@@ -374,9 +374,11 @@ header {
     .menus .choixPlat .platEntrees {
       animation: moveCarte 1s cubic-bezier(0, 0, 0, 1) forwards; }
     .menus .choixPlat .platPlats {
-      animation: moveCarte 2s cubic-bezier(0, 0, 0, 1) forwards; }
+      animation: moveCarte 1s cubic-bezier(0, 0, 0, 1) forwards;
+      animation-delay: 400ms; }
     .menus .choixPlat .platDesserts {
-      animation: moveCarte 3s cubic-bezier(0, 0, 0, 1) forwards; }
+      animation: moveCarte 1s cubic-bezier(0, 0, 0, 1) forwards;
+      animation-delay: 900ms; }
     .menus .choixPlat .plat {
       top: 45px;
       min-width: 300px;
