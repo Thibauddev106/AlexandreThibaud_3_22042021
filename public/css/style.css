@@ -401,13 +401,18 @@ header {
         transform: translateX(0px); }
         .menus .choixPlat .plat:hover .platValide .platValideIcon {
           transform: rotate(0deg); }
+      .menus .choixPlat .plat:hover .platNom {
+        overflow: hidden;
+        margin-right: 60px; }
       .menus .choixPlat .plat:hover .platDesc {
         overflow: hidden; }
       .menus .choixPlat .plat:hover .platPrix {
         margin-right: 60px;
-        transform: translateX(-10px);
         margin-left: 15px; }
       .menus .choixPlat .plat .platNom {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         font-weight: 700; }
       .menus .choixPlat .plat .platLigne2 {
         display: flex;
