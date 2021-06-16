@@ -77,8 +77,7 @@ footer {
     margin-bottom: 100px;
     position: fixed; }
   .contenuLoader .loader {
-    transition-duration: 2s;
-    transform: rotate(360deg);
+    animation: chargement 3s;
     color: #FF79DA;
     font-size: 30px; }
 
@@ -148,6 +147,12 @@ footer {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15); }
     .fonctionnement .etapes:hover {
       background-color: #f2eafb; }
+      .fonctionnement .etapes:hover .fa-mobile-alt {
+        color: #9356DC; }
+      .fonctionnement .etapes:hover .fa-list-ul {
+        color: #9356DC; }
+      .fonctionnement .etapes:hover .fa-store {
+        color: #9356DC; }
     .fonctionnement .etapes .fa-mobile-alt {
       margin-left: 40px;
       margin-right: 20px;
@@ -157,6 +162,8 @@ footer {
       margin-left: 40px;
       margin-right: 20px;
       color: gray; }
+      .fonctionnement .etapes .fa-list-ul:hover {
+        color: #f2eafb; }
     .fonctionnement .etapes .fa-store {
       margin-left: 40px;
       margin-right: 20px;
@@ -397,7 +404,9 @@ header {
       .menus .choixPlat .plat:hover .platDesc {
         overflow: hidden; }
       .menus .choixPlat .plat:hover .platPrix {
-        margin-right: 60px; }
+        margin-right: 60px;
+        transform: translateX(-10px);
+        margin-left: 15px; }
       .menus .choixPlat .plat .platNom {
         font-weight: 700; }
       .menus .choixPlat .plat .platLigne2 {
@@ -406,9 +415,11 @@ header {
         justify-content: space-between; }
         .menus .choixPlat .plat .platLigne2 .platDesc {
           font-weight: 300;
+          overflow: hidden;
           white-space: nowrap;
           text-overflow: ellipsis; }
         .menus .choixPlat .plat .platLigne2 .platPrix {
+          margin-left: 15px;
           font-weight: bold;
           transition: margin-right 400ms; }
       .menus .choixPlat .plat .platValide {
@@ -504,5 +515,10 @@ header {
   100% {
     opacity: 1;
     transform: translateY(-45px); } }
+@keyframes chargement {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=style.css.map */

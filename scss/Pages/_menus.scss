@@ -126,19 +126,16 @@ header
         .platEntrees
         {
             animation: moveCarte 1s cubic-bezier(0, 0, 0, 1) forwards;   
-            
         }
 
         .platPlats
         {
-            
             animation: moveCarte 1s cubic-bezier(0, 0, 0, 1) forwards;
             animation-delay: 400ms;
         }
         
         .platDesserts
         {
-            
             animation: moveCarte 1s cubic-bezier(0, 0, 0, 1) forwards;
             animation-delay: 900ms;
         }
@@ -171,11 +168,14 @@ header
                 .platDesc
                 {
                     overflow: hidden;
+                    
                 }
 
                 .platPrix
                 {
                     margin-right:60px;
+                    transform:translateX(-10px);
+                    margin-left: 15px;
                 }
             }
             
@@ -189,17 +189,19 @@ header
             {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
-            
+                justify-content:space-between;
+                
                 .platDesc
                 {
                     font-weight: 300;
+                    overflow: hidden;
                     white-space: nowrap;
-                    text-overflow: ellipsis;
+                    text-overflow: ellipsis;   
                 }
 
                 .platPrix
                 {
+                    margin-left: 15px;
                     font-weight: bold;
                     transition: margin-right 400ms;
                 }
